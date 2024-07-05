@@ -14,8 +14,8 @@ document.getElementById('bgColor').addEventListener('input', async () => {
         if (colorName) {
             const color = await fetchColor(colorName);
             if (color) {
-                const layer = layerId.replace('Color', '');
-                applyColor(layer, color.hex);
+                const layerContainer = `${layerId.replace('Color', '')}Container`;
+                applyColor(layerContainer, color.hex);
             }
         }
     });
