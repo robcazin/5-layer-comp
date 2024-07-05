@@ -36,3 +36,8 @@ body {
 #layer4 {
     mask-image: url('layer4.png');
 }
+
+.logo-img {
+    width: auto;
+    height: 1.5rem; /* Reduced height by 50% */
+}
