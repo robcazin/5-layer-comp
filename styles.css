@@ -25,5 +25,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+#layer1, #layer2, #layer3, #layer4 {
     mix-blend-mode: multiply; /* Ensures the color blending */
 }
