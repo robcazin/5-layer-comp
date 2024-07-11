@@ -1,5 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
+    background-color: #777777; /* Dark background color */
+    color: #343434; /* Light text color */
 }
 
 #preview {
@@ -40,4 +42,89 @@ body {
 .logo-img {
     width: auto;
     height: 1.5rem; /* Reduced height by 50% */
+}
+
+.thumbnail {
+    width: 100px;  /* Increased width */
+    height: 100px; /* Increased height */
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.pattern-thumbnails {
+    max-height: 120px;
+    overflow-x: auto;
+    display: flex;
+    gap: 12px;
+}
+
+.bg-dark {
+    background-color: #979797; /* Dark background for elements */
+}
+
+.text-light {
+    color: #000000; /* Light text color for elements */
+}
+
+.combination {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    padding: 12px; /* Increased padding for better spacing */
+    margin-bottom: 8px;
+    background-color: #979797; /* Dark background for sets */
+    border: 1px solid #0000e1; /* Added border for better visibility */
+    border-radius: 4px; /* Added border-radius for better aesthetics */
+    max-width: 200px; /* Constrained width */
+}
+
+.combination p {
+    margin: 4px 0; /* Increased margin for better readability */
+    text-align: center; /* Center text */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    width: 100%;
+}
+
+.combination .button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.combination button {
+    margin-top: 5px;
+    margin-right: 5px;
+    flex: 1;
+}
+
+/* Adjusting button spacing */
+.combination button + button {
+    margin-left: 5px;
+}
+
+.saved-combinations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 8px; /* Adjusted gap for compactness */
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 4px; /* Added padding for better spacing */
+}
+
+.saved-combinations h2 {
+    margin-bottom: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    #preview {
+        height: 300px;
+    }
 }
