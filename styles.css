@@ -41,9 +41,8 @@ body {
 
 .logo-img {
     width: auto;
-    height: 1.5rem; /* Reduced height by 50% */
+    height: 6rem; /* Increased height to 4.5rem (3 times the previous height of 1.5rem) */
 }
-
 .thumbnail {
     width: 100px;  /* Increased width */
     height: 100px; /* Increased height */
